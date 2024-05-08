@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "auto-commit-msg"
+version = "0.1.0"
+description = ""
+authors = ["CodingMan <pttcodingman@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+anthropic = "^0.25.8"
+readchar = "^4.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
