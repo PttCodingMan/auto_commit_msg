@@ -58,7 +58,10 @@ def select_commit_message(commit_messages):
             prefix = "> " if i == selected_index else "  "
             print(f"{prefix}{i + 1}. {message}")
 
-        key = readchar.readkey()
+        try:
+            key = readchar.readkey()
+        except KeyboardInterrupt:
+            return None
         if key == readchar.key.UP:
             selected_index = (selected_index - 1) % (len(commit_messages) + 1)
         elif key == readchar.key.DOWN:
