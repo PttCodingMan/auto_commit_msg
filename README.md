@@ -33,15 +33,14 @@ msg，讓你選擇最合適的一條，或者輸入自定義的 commit msg。
 ## 使用
 
 ```bash
-    python git_commit_message_generator.py /path/to/your/repo
+  python git_commit_message_generator.py /path/to/your/repo
 ```
 
 將 `/path/to/your/repo` 替換為你的 Git 倉庫的實際路徑。
 
 1. 腳本將獲取已暫存的變更，並使用 Anthropic Claude API 生成候選的 commit msg。
 
-2. 使用方向鍵上下選擇你喜歡的 commit msg，然後按 Enter 鍵確認。你也可以選擇 "0. 自定義commit msg" 選項，然後輸入自己的commit
-   msg。
+2. 使用方向鍵上下選擇你喜歡的 commit msg，然後按 Enter 鍵確認。你也可以選擇 "0. 自定義commit msg" 選項，然後輸入自己的 commit msg。
 
 3. 確認是否要使用選擇的 commit msg進行提交。輸入 'y' 或直接按 Enter 鍵確認提交，輸入 'n' 取消提交。
 
